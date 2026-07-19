@@ -1,0 +1,92 @@
+# ============================================
+# STM32 HAL 开发 - Git 忽略文件
+# ============================================
+
+# --- 编译输出 ---
+Debug/
+Release/
+build/
+out/
+obj/
+*.o
+*.obj
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+*.d         # 依赖文件
+*.crf
+*.o.d
+*.dmp
+*.axf
+*.iex
+
+# --- 库文件 / 静态库 ---
+*.a
+*.lib
+*.exp
+
+# --- MDK-ARM (Keil) ---
+*.uvguix
+*.uvguix.*
+*.uvoptx
+*.uvoptx.*
+*.scvd
+*.uvprojx.bak
+JLinkLog.txt
+*.JLinkLog*
+*.jlink
+RTE/
+
+# --- IAR ---
+settings/
+Debug/
+Release/
+*.ewd
+*.ewp
+*.eww
+*.dep
+*.ewt
+
+# --- STM32CubeIDE / SW4STM32 ---
+.settings/
+.project
+.cproject
+*.launch
+mxproject
+*.ioc.bak
+
+# --- VS Code ---
+.vscode/
+*.code-workspace
+
+# --- JetBrains (CLion) ---
+.idea/
+*.iml
+
+# --- 系统文件 ---
+Thumbs.db
+.DS_Store
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# --- 临时文件 ---
+*.tmp
+*.bak
+*.log
+*.stackdump
+
+# --- 文档/数据表（非源码） ---
+*.pdf
+*.doc
+*.docx
+
+# --- 固件库（如有自行管理可保留，否则忽略） ---
+# Drivers/ 目录通常由 CubeMX 生成，建议保留在版本控制中
+# Middleware/ 同理，建议保留
+# 如果不需要可以取消下面注释：
+# Drivers/
+# Middleware/
